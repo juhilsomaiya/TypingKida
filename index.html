@@ -1,0 +1,72 @@
+<html>
+
+<head>
+    <title></title>
+    <script type="text/javascript" src="src/js/jquery.min.js"></script>
+    <script type="text/javascript" src="src/js/underscore-min.js"></script>
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="src/css/component.css" />
+    <link href="src/css/toggle.css" rel="stylesheet">
+    <link href="src/css/font-proxima.css" rel="stylesheet">
+    <script src="src/js/modernizr.custom.js"></script>
+   
+</head>
+
+<body id="body">
+    <div class="onoffswitch3">
+        <input type="checkbox" name="onoffswitch3" class="onoffswitch3-checkbox" id="myonoffswitch3" checked
+            onclick="changedState(this)">
+        <label class="onoffswitch3-label" for="myonoffswitch3">
+            <span class="onoffswitch3-inner">
+                <span class="onoffswitch3-active"><span class="onoffswitch3-switch">Light Mode</span></span>
+                <span class="onoffswitch3-inactive"><span class="onoffswitch3-switch">Dark Mode</span></span>
+            </span>
+        </label>
+    </div>
+
+    <div class="start_div">
+        <button name="start" id="start" class="progress-button" data-style="flip-open" data-perspective
+            data-horizontal>Let's Start</button>
+    </div>
+
+
+    <div class="textFromHere">
+        <div class="internal">
+            <p class="typed"></p>
+            <p class="next"></p>
+            <p class="remaining"></p>
+        </div>
+    </div>
+    <div class="to_div">
+        <input type='text' name="to_text" id="to_text"></input>
+    </div>
+    <div class="result_div">
+        <div class="smily">
+            <img src="src/images/gogles.png" class="res_img" />
+        </div>
+        <div class="result">
+            <div class="speed" style="float: left">
+                <span class="res_title">Speed</span>
+                <span class="res_num"></span>
+                <span class="res_unit">/wpm</span>
+            </div>
+            <div class="accuracy">
+                <span class="res_title">Accuracy</span>
+                <span class="res_num"></span>
+                <span class="res_unit">%</span>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="src/data.json"></script>
+<script src="src/js/classie.js"></script>
+<script src="src/js/progressButton.js"></script>
+<script src="src/js/script.js"></script>
+<script>
+    function changedState(cb) {
+        $("body").toggleClass("light_mode");
+    }
+</script>
+
+
+</html>

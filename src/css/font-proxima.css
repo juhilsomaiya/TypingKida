@@ -1,0 +1,21 @@
+@font-face {
+	font-family: 'Proxima Nova Soft';
+	src: url('../webfonts/3291C4_3_0.eot');
+	src: url('../webfonts/3291C4_3_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/3291C4_3_0.woff2') format('woff2'),url('../webfonts/3291C4_3_0.woff') format('woff'),url('../webfonts/3291C4_3_0.ttf') format('truetype');
+	font-style: normal;
+	font-weight: 400;
+}
+@font-face {
+	font-family: 'Proxima Nova Soft';
+	src: url('../webfonts/3291C4_1_0.eot');
+	src: url('../webfonts/3291C4_1_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/3291C4_1_0.woff2') format('woff2'),url('../webfonts/3291C4_1_0.woff') format('woff'),url('../webfonts/3291C4_1_0.ttf') format('truetype');
+	font-style: normal;
+	font-weight: 600;
+}
+@font-face {
+	font-family: 'Proxima Nova Soft';
+	src: url('../webfonts/3291C4_2_0.eot');
+	src: url('../webfonts/3291C4_2_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/3291C4_2_0.woff2') format('woff2'),url('../webfonts/3291C4_2_0.woff') format('woff'),url('../webfonts/3291C4_2_0.ttf') format('truetype');
+	font-style: normal;
+	font-weight: 700;
+}
