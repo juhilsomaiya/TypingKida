@@ -177,7 +177,7 @@ function sparcle() {
 		return Math.random() * 100
 	}
 
-	for (let i = 0; i < 200; i++) {
+	for (let i = 0; i < 100; i++) {
 		const delay = Math.random() + 's';
 		const el = document.createElement('img')
 		el.src = 'https://dl.dropboxusercontent.com/s/soxcov4m81dx55l/star.svg'
@@ -208,7 +208,7 @@ function resetAll() {
 }
 
 function timer() {
-	return new Promise(resolve => {
+	var prom = new Promise(resolve => {
 		new ProgressButton($("button")[0], {
 			callback: function (instance) {
 				$(".result_div").hide();
@@ -229,6 +229,7 @@ function timer() {
 			}
 		});
 	});
+	return prom;
 }
 
 function join(arr) {
